@@ -27,15 +27,6 @@
         </interface>
     </hal>
     <hal format="hidl">
-        <name>android.hardware.bluetooth.audio</name>
-        <transport>hwbinder</transport>
-        <version>2.0</version>
-        <interface>
-            <name>IBluetoothAudioProvidersFactory</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
         <name>android.hardware.camera.provider</name>
         <transport>hwbinder</transport>
         <version>2.4</version>
@@ -78,15 +69,6 @@
         </interface>
         <interface>
             <name>IOmxStore</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>android.hardware.memtrack</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IMemtrack</name>
             <instance>default</instance>
         </interface>
     </hal>
@@ -529,6 +511,15 @@
             <name>ISoter</name>
             <instance>default</instance>
         </interface>
+    </hal>
+    <hal format="hidl">
+      <name>vendor.qti.hardware.tui_comm</name>
+      <transport>hwbinder</transport>
+      <version>1.0</version>
+      <interface>
+          <name>ITuiComm</name>
+          <instance>default</instance>
+      </interface>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.wifi.wifilearner</name>
