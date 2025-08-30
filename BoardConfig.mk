@@ -107,9 +107,6 @@ TARGET_KERNEL_CONFIG := vendor/lito-perf_defconfig vendor/debugfs.config
 # Lineage Health
 TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH := /sys/class/oplus_chg/battery/mmi_charging_enable
 
-# Media
-TARGET_USES_ION := true
-
 # Platform
 BOARD_USES_QCOM_HARDWARE := true
 TARGET_BOARD_PLATFORM := lito
