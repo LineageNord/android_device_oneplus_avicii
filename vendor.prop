@@ -3,3 +3,4 @@ bluetooth.device.default_name=OnePlus Nord
 
 # USB String
 vendor.usb.product_string=OnePlus Nord
+ro.usb.uvc.enabled=true
