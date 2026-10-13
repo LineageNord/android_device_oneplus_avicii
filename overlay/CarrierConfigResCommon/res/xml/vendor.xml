@@ -2541,6 +2541,14 @@
             <item value="46099" />
         </string-array>
     </carrier_config>
+    <carrier_config operator="CTMO">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+        <string-array name="mccmnc" num="2">
+            <item value="45502" />
+            <item value="45507" />
+        </string-array>
+    </carrier_config>
     <carrier_config operator="CU">
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
@@ -2618,13 +2626,6 @@
         <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
         <string-array name="mccmnc" num="1">
             <item value="46001" />
-        </string-array>
-    </carrier_config>
-    <carrier_config operator="CTMO">
-        <boolean name="carrier_volte_available_bool" value="true" />
-        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
-        <string-array name="mccmnc" num="1">
-            <item value="45507" />
         </string-array>
     </carrier_config>
     <carrier_config operator="FET">
@@ -3950,6 +3951,13 @@
             <item value="45202" />
         </string-array>
     </carrier_config>
+    <carrier_config operator="Mobifone">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
+        <string-array name="mccmnc" num="1">
+            <item value="45201" />
+        </string-array>
+    </carrier_config>
     <carrier_config operator="3-Ireland">
         <string-array name="mccmnc" num="2">
             <item value="27202" />
@@ -4337,10 +4345,6 @@
             <item value="405873" />
             <item value="405874" />
         </string-array>
-		<!-- Do not allow 5G NSA on Jio -->
-        	<int-array name="carrier_nr_availabilities_int_array" num="1">
-            		<item value="2" />
-        	</int-array>
     </carrier_config>
     <carrier_config operator="AIRTEL">
         <boolean name="carrier_volte_available_bool" value="true" />
@@ -4356,6 +4360,8 @@
         <boolean name="oplus_support_video_cf_bool" value="true" />
         <boolean name="config_oplus_show_video_call_forward" value="true" />
         <boolean name="carrier_allow_transfer_ims_call_bool" value="false" />
+        <boolean name="config_oplus_4g_pref_default" value="false" />
+        <int name="config_oplus_5g_pref_default" value="1" />
         <string-array name="mccmnc" num="24">
             <item value="40400" />
             <item value="40402" />
@@ -4395,6 +4401,8 @@
         <boolean name="editable_wfc_roaming_mode_bool" value="true" />
         <string name="carrier_ims_user_agent">ONEPLUS_[M]_[S]_[D]</string>
         <boolean name="carrier_allow_transfer_ims_call_bool" value="false" />
+        <boolean name="config_oplus_4g_pref_default" value="false" />
+        <int name="config_oplus_5g_pref_default" value="1" />
         <string-array name="mccmnc" num="23">
             <item value="40401" />
             <item value="40405" />
@@ -4432,6 +4440,8 @@
         <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
         <boolean name="editable_wfc_roaming_mode_bool" value="true" />
         <boolean name="carrier_allow_transfer_ims_call_bool" value="false" />
+        <boolean name="config_oplus_4g_pref_default" value="false" />
+        <int name="config_oplus_5g_pref_default" value="1" />
         <string-array name="mccmnc" num="28">
             <item value="40404" />
             <item value="40407" />
