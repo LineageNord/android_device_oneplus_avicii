@@ -5,3 +5,4 @@ bluetooth.device.default_name=OnePlus Nord
 vendor.usb.product_string=OnePlus Nord
 ro.usb.uvc.enabled=true
 ro.usb.uvc.disable_video_encode_flag=true
+vendor.usb.uvc.payload_transfer_size=1024
