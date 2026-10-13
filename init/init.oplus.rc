@@ -6,6 +6,7 @@
 
 on init
     # Charger
+    write /proc/charger_log 0
     write /proc/fastchg_fw_update 1
     write /proc/ui_soc_decimal 1
 
