@@ -15,7 +15,7 @@ namespace touch {
 const int TouchscreenGesture::kSupportedGestures = makeBitField(
         kGestureUpVee, kGestureLeftVee, kGestureRightVee, kGestureCircle, kGestureDoubleSwipe,
         kGestureLeftToRight, kGestureRightToLeft, kGestureUpToDown, kGestureDownToUp, kGestureM,
-        kGestureW);
+        kGestureW, kGestureS);
 
 }  // namespace touch
 }  // namespace lineage
