@@ -32,5 +32,8 @@ TARGET_RECOVERY_UI_MARGIN_HEIGHT := 103
 # Security
 VENDOR_SECURITY_PATCH := 2023-12-05
 
+# Touchscreen gestures
+$(call soong_config_set,OPLUS_LINEAGE_TOUCH_HAL,INCLUDE_DIR,$(DEVICE_PATH)/touch/include)
+
 # Include the proprietary files BoardConfig.
 include vendor/oneplus/avicii/BoardConfigVendor.mk
