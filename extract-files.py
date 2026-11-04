@@ -87,7 +87,11 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libc++_shared.so'),
     'vendor/lib64/sensors.ssc.so': blob_fixup()
         .binary_regex_replace(b'qti.sensor.wise_light', b'android.sensor.light\x00')
-        .sig_replace('F1 E9 D3 84 52 49 3F A0 72', 'F1 A9 00 80 52 09 00 A0 72'),
+        .sig_replace('F1 E9 D3 84 52 49 3F A0 72', 'F1 A9 00 80 52 09 00 A0 72')
+        .sig_replace('FA BD 00 94 1F 04 00 71 8B 0A 00 54', 'FA BD 00 94 1F 0C 00 71 8B 0A 00 54')
+        .sig_replace('C0 00 80 52 84 1E 80 52', '60 00 80 52 84 1E 80 52')
+        .sig_replace('D9 BD 00 94 1F 04 00 71 6B 06 00 54', 'D9 BD 00 94 1F 0C 00 71 6B 06 00 54')
+        .sig_replace('C0 00 80 52 84 1F 80 52', '60 00 80 52 84 1F 80 52'),
     'vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so': blob_fixup()
         .call(blob_fixup_nop_call, 'bl', '__cfi_check', '_ZN7android8hardware22configureRpcThreadpoolEmb@plt'),
 }  # fmt: skip
